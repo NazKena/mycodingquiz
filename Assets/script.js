@@ -37,7 +37,8 @@ let myQuestions = [
 
 ]
 
+console.log(myQuestions)
+
 let begin = true;
 
-console.log(myQuestions)
     
