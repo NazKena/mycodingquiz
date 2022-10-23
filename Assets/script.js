@@ -1,3 +1,5 @@
+function generateQuiz ()
+
 let storeQuiz = document.getElementById ("quiz")
 let storeResults = document.getElementById ("results")
 let beginButton = document.getElementById ("begin-quiz")
@@ -20,8 +22,22 @@ let myQuestions = [
             b : "text-align",
             c : "flex-direction",
         },
-     rightAnswer: "c"   
+     rightAnswer: "c",   
      },
-     
+
+     {
+        question: "What does this JavaScript comparison operator mean ('!=')?",
+        answers : {
+            a : "equal to",
+            b : "not equal to",
+            c : "error",
+        },
+        rightAnswer : "b",
+     }
+
 ]
+
+let begin = true;
+
+console.log(myQuestions)
     
