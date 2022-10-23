@@ -7,16 +7,33 @@ body {
 }
 
 h1 {
-    color: 	#FFFACD	
+    color: #45103E;
 }
 
 h2 {
     text-decoration: underline;
-    color: #FFFFE0	;
+    color: #45103E;
+}
+
+.rules {
+    color: #45103E;
+}
+
+.panel {
+    margin: auto;
+    width: 700px;
+    background-color: #45103E;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.store-questions {
+    color: #45103E;
 }
 
 button {
-    color:#C8A2C8;
+    color:#45103E;
     width: 150px ;
     background-color: #FFFACD;
     padding-top: 5px;
