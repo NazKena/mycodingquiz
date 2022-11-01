@@ -21,10 +21,10 @@
      <br>
        <img src="./Assets/Images/images-removebg-preview.png">
      <br>
-       <button id="begin-quiz">BEGIN</button>
+       <button class="start" id="start-btnstartQuiz()" onclick="start()">START</button>
      <div>
         <br>
-        <div class="store-questions" id="questions">
+        <div id="store-questions">
             Where my questions will go
         </div>
         <br>
@@ -34,14 +34,21 @@
             <button class="chocies" id="choice3">CHOICE 3</button>
         </div>
         <div class="">
-          <button class="submit">SUBMIT</button>
-          <button class="next">NEXT</button>
-         <button onclick="timer()">CLICK HERE TO START</button> 
+          <button id="submit">SUBMIT</button>
+          <button id="next">NEXT</button>
+          <br>
+         <div id="countdown">
+            <span class="count-digit">1</span>
+            <span class="count-digit">0</span>
+            <span class="seperator">:</span>
+            <span class="seperator">0</span>
+            <span class="seperator">0</span>
+         </div> 
         </div>
      </div>
     </section>
-     <div id = "quiz"></div>
-     <div id="results"></div>
+     <div id ="quiz-el"></div>
+     <div id="results-el"></div>
 <script src="script.js"></script>
 </body>
 </html>
