@@ -1,6 +1,6 @@
 # MY CODING QUIZ
 
-## I used HTML, CSS and JavaScript to build a coding quiz. I downloaded a quiz image from google to place in the middle of my quiz. However, although I do have some code in my JavaScript, I was unable to make it work.
+### I used HTML, CSS and JavaScript to build a coding quiz. I downloaded a quiz image from google to place in the middle of my quiz. However, although I do have some code in my JavaScript, I was unable to make it work.
 
 ![SCREENSHOT](./Assets/Images/Screenshot.jpeg)
 
