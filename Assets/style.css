@@ -1,8 +1,5 @@
-* {
-    background-color: #D3B5D3;
-}
-
 body {
+    background-color:#C8A2C8;
     text-align: center;
 }
 
@@ -12,20 +9,21 @@ h1 {
 
 h2 {
     text-decoration: underline;
-    color: #45103E;
+    color:#45103E;
 }
 
 .rules {
-    color: #45103E;
+    color:#45103E;
 }
 
 .panel {
     margin: auto;
     width: 700px;
-    background-color: #45103E;
+    background-color:white;
     border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid #45103E;
 }
 
 .store-questions {
@@ -35,7 +33,7 @@ h2 {
 button {
     color:#45103E;
     width: 150px ;
-    background-color: #FFFACD;
+    background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight: bold;
@@ -49,4 +47,8 @@ button {
     padding-bottom: 5px;
     font-weight: bold;
     border-radius: 3px;
+}
+
+.hide {
+    display:none;
 }
