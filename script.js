@@ -1,12 +1,29 @@
-function start ()
-  document.querySelector('start') 
+function buildQuiz() {
+  
+  document.getElementById("showQuiz").style.visibility = "hidden"
+  const output = [];
 
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answers = [];
 
-function generateQuiz ()
+    for (letter in currentQuestion.answers) {
+      answers.push(
+        `<label>
+        <input type="radio" name="question${questionNumber}" value="${letter}">
+        ${letter} :
+        ${currentQuestion.answers[letter]}
+      </label>`
+      );
+    }
 
-let storeQuiz = document.getElementById ("quiz")
-let storeResults = document.getElementById ("results")
-let beginButton = document.getElementById ("begin-quiz")
+    output.push(
+      `<div class="question"> ${currentQuestion.question} </div>
+    <div class="answers"> ${answers.join("")} </div>`
+    );
+  });
+
+  quizContainer.innerHTML = output.join("");
+}
 
 let myQuestions = [
     {
@@ -41,35 +58,33 @@ let myQuestions = [
 
 ]
 
-let score = 0;
 
-for (let i=0; i <myQuestions.length; i++;){
-    let answer = window.prompt(myQuestions[i].prompt);
-    if(answer == myQuestions[i]).rightAnswer {
-        score++;
-        alert("Correct!");
 
-    }
 
+
+
+
+
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  setInterval(function () {
+      minutes = parseInt(timer / 60, 10)
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+          timer = 0;
+         
+      }
+  }, 1000);
 }
 
-
-console.log(myQuestions)
-
-let begin = true;
-
-
-const startingTime= 10;
-let timer =startingMinutes * 60;
-
-const countdownEl = document.getElementById ("countdown")
-
-setInterval(updateCountdown, 1000);
-
-function updateCountdown (){
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-
-    countdownEl.innerHTML = '${'
-    time--;
-}
+window.onload = function () {
+  var time = 600 / 2, 
+      display = document.querySelector('#safeTimerDisplay');
+  startTimer(time, display);
+};

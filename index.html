@@ -21,7 +21,11 @@
      <br>
        <img src="./Assets/Images/images-removebg-preview.png">
      <br>
-       <button class="start" id="start-btnstartQuiz()" onclick="start()">START</button>
+     <div id="Timer">
+      <p>Timer</p>
+      <p id="safeTimerDisplay">05:00</p>
+      </div>
+       <button class="start" id="start-btnstartQuiz()" onclick="startTimer()">START</button>
      <div>
         <br>
         <div id="store-questions">
@@ -37,12 +41,6 @@
           <button id="submit">SUBMIT</button>
           <button id="next">NEXT</button>
           <br>
-         <div id="countdown">
-            <span class="count-digit">1</span>
-            <span class="count-digit">0</span>
-            <span class="seperator">:</span>
-            <span class="seperator">0</span>
-            <span class="seperator">0</span>
          </div> 
         </div>
      </div>
