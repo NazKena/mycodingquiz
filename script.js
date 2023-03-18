@@ -29,16 +29,6 @@ const Questions = [{
     ]
 
 },
-{
-    id: 3,
-    q:  "What does XML stand for?",
-    a: [{ text: "eXtensible Markup Language", isCorrect: true },
-        { text: "eXecutable Multiple Language", isCorrect: false },
-        { text: "eXTra Multi-Program Language", isCorrect: false },
-        { text:  "eXamine Multiple Language", isCorrect: false }
-    ]
-
-},
 ]
 
 

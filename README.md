@@ -1,9 +1,23 @@
-# MY CODING QUIZ
+# My Coding Quiz
 
-### I used HTML, CSS and JavaScript to build a coding quiz. I downloaded a quiz image from google to place in the middle of my quiz. However, although I do have some code in my JavaScript, I was unable to make it work.
+## Table of Contents
 
-![SCREENSHOT](./Assets/Images/Screenshot.jpeg)
+- [Description](#description)
+- [Technologies](#technologies)
+- [Screenshot](#screenshot)
 
-[GitHub Link](https://github.com/NazKena/mycodingquiz)
+## Description
 
-[My Deployed Page](https://nazkena.github.io/mycodingquiz/)
+Here I have created a quiz that works by using javascript, HTML, and CSS. A few coding questions will appear adn when prompted, asnwer the questions and to check if you were correct, click the check button which will let you know if you have gotten it correct or incorrect. 
+
+## Technologies
+
+- HTML 
+- CSS
+- JavaScript
+
+## Screenshot
+
+![Image](./Assets/Images/Screenshot%202023-03-18%20at%2010.10.56.png)
+
+
