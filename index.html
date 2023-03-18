@@ -1,15 +1,16 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/style.css">
-    <title>Beginners Coding Quiz</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./Assets/style.css">
 </head>
 <body>
     <h1>Beginners Coding Quiz</h1>
-    <section class="panel">
+   <section class="panel">
         <h2>Rules</h2>
       <div class="rules">
          You have 10 minutes to complete this quiz
@@ -19,34 +20,39 @@
          Most importantly, enjoy and good luck!
       <div>
      <br>
-       <img src="./Assets/Images/images-removebg-preview.png">
      <br>
-     <div id="Timer">
-      <p>Timer</p>
-      <p id="safeTimerDisplay">05:00</p>
-      </div>
-       <button class="start" id="start-btnstartQuiz()" onclick="startTimer()">START</button>
-     <div>
-        <br>
-        <div id="store-questions">
-            Where my questions will go
-        </div>
-        <br>
-        <div class="store-choices">
-            <button class="choices" id="choice1">CHOICE 1</button>
-            <button class="chocies" id="choice2">CHOICE 2</button>
-            <button class="chocies" id="choice3">CHOICE 3</button>
-        </div>
-        <div class="">
-          <button id="submit">SUBMIT</button>
-          <button id="next">NEXT</button>
-          <br>
-         </div> 
-        </div>
-     </div>
-    </section>
-     <div id ="quiz-el"></div>
-     <div id="results-el"></div>
-<script src="script.js"></script>
+     <img src="./Assets/Images/images-removebg-preview.png">
+   <br> 
+	<div class="panel">
+		<div class="result">
+            
+            <div id="Timer">
+                <p>Timer</p>
+                <p id="safeTimerDisplay">05:00</p>
+                </div>
+                <button class="start" id="start-btnstartQuiz()" onclick="startTimer()">START</button>
+		</div>
+
+   
+
+		<div class="store-container" id="question">
+			Question goes here.
+		</div>
+		<div class="option-container">
+			<button class="option" onclick="" id="selection1" >option1</button>
+	
+			<button class="option" id="selection2" >option2</button>
+	
+			<button class="option" id="selection3">option3</button>
+	
+			<button class="option" id="selection4">option4</button>
+		</div>
+		<div class="navigation">
+			<button class="evaluate">Evaluate</button>
+			<button class="next">Next</button>
+		</div>       
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
