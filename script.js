@@ -28,8 +28,22 @@ const Questions = [{
         { text: "not correct", isCorrect: false }
     ]
 
-}
+},
+{
+    id: 3,
+    q:  "What does XML stand for?",
+    a: [{ text: "eXtensible Markup Language", isCorrect: true },
+        { text: "eXecutable Multiple Language", isCorrect: false },
+        { text: "eXTra Multi-Program Language", isCorrect: false },
+        { text:  "eXamine Multiple Language", isCorrect: false }
+    ]
+
+},
 ]
+
+
+let startBtn = document.querySelector('#start');
+let stopBtn  = document.querySelector('#stop');
 
 
 // Set start
@@ -70,7 +84,6 @@ selection4.value = Questions[id].a[3].isCorrect;
 
 var selected = "";
 
-// Show selection for op1
 selection1.addEventListener("click", () => {
     selection1.style.backgroundColor = "lightgoldenrodyellow";
     selection2.style.backgroundColor = "lightskyblue";
@@ -79,7 +92,6 @@ selection1.addEventListener("click", () => {
     selected = selection1.value;
 })
 
-// Show selection for op2
 selection2.addEventListener("click", () => {
     selection1.style.backgroundColor = "lightskyblue";
     selection2.style.backgroundColor = "lightgoldenrodyellow";
@@ -88,7 +100,6 @@ selection2.addEventListener("click", () => {
     selected = selection2.value;
 })
 
-// Show selection for op3
 selection3.addEventListener("click", () => {
     selection1.style.backgroundColor = "lightskyblue";
     selection2.style.backgroundColor = "lightskyblue";
@@ -97,7 +108,6 @@ selection3.addEventListener("click", () => {
     selected = selection3.value;
 })
 
-// Show selection for op4
 selection4.addEventListener("click", () => {
     selection1.style.backgroundColor = "lightskyblue";
     selection2.style.backgroundColor = "lightskyblue";
@@ -109,7 +119,6 @@ selection4.addEventListener("click", () => {
 // Grabbing the evaluate button
 const evaluate = document.getElementsByClassName("evaluate");
 
-// Evaluate method
 evaluate[0].addEventListener("click", () => {
     if (selected == "true") {
         result[0].innerHTML = "True";
@@ -125,7 +134,7 @@ if (start) {
 iterate("0");
 }
 
-// Next button and method
+// Next button and its method
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
 
