@@ -19,10 +19,12 @@ Here I have created a quiz that works by using javascript, HTML, and CSS. A few 
 
 ## Screenshot
 
+![Image](./Assets/Images/Screenshot%202023-03-22%20at%2013.33.00.png)
+
 
 ## Links 
 
-[GitHub]()
+[GitHub](https://nazkena.github.io/mycodingquiz/)
 
 
 
