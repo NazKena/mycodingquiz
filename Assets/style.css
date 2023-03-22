@@ -1,0 +1,44 @@
+body{
+    background-color:#C8A2C8;
+    text-align: center;
+}
+
+h1 {
+    color: #45103E;
+    text-align: center;
+}
+
+
+.start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color:#C8A2C8;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #45103E;
+    cursor: pointer;
+}
+
+.info_box {
+    width: 540px;
+    background:#45103E;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.info_box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #C8A2C8;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
